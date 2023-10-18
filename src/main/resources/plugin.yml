@@ -1,62 +1,7 @@
-name: skycraft
+name: BlockBreakUpdate
 version: '${project.version}'
-main: me.skycraftalfieedyvean.skyhub.SkyHub
-authors: [widdle]
-description: Skycraft Main Plugin
-commands:
-  spawn:
-    description: "Go back to spawn"
-    usage: "/spawn"
-  setspawn:
-    description: "Set the spawn point of the server"
-    usage: "/setspawn"
-    permission: skycraft.admin
-    permission-message: "§cYou don't have the required permissions to use this command!\n§ctIf you believe this is an error please let us know!"
+main: me.widdleljk.blockbreakupdate.BlockBreakUpdate
 permissions:
-  skycraft.owner:
-    description: Grants someone the owner rank
+  block.break:
     default: op
-    children:
-      skycraft.admin: true
-      skycraft.mod: true
-      skycraft.helper: true
-      skycraft.youtube: true
-      skycraft.mvp: true
-      skycraft.vip: true
-  skycraft.admin:
-    description: Grants someone the admin rank
-    default: op
-    children:
-      skycraft.mod: true
-      skycraft.helper: true
-      skycraft.youtube: true
-      skycraft.mvp: true
-      skycraft.vip: true
-  skycraft.mod:
-    description: Grants someone the mod rank
-    default: not op
-    children:
-      skycraft.helper: true
-      skycraft.youtube: true
-      skycraft.mvp: true
-      skycraft.vip: true
-  skycraft.helper:
-    description: Grants someone the mod rank
-    default: not op
-    children:
-      skycraft.mvp: true
-      skycraft.vip: true
-  skycraft.youtube:
-    description: Grants someone the mod rank
-    default: not op
-    children:
-      skycraft.mvp: true
-      skycraft.vip: true
-  skycraft.mvp:
-    description: Grants someone the mod rank
-    default: not op
-    children:
-      skycraft.vip: true
-  skycraft.vip:
-    description: Grants someone the mod rank
-    default: not op
+    description: "Break blocks"
